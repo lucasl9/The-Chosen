@@ -1,0 +1,159 @@
+/* styles.css */
+
+*{
+  font-family: "Libre Bodoni", libre-bodoni;
+  letter-spacing: 0.1rem; 
+  margin: 0;
+  padding: 0; 
+}
+
+html {
+  scroll-snap-type: y mandatory;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&display=swap');
+
+/* Estilos gerais */
+body {
+    
+    background-color: #000200;
+    display:block;
+    height: 100vh;
+    justify-content: center;
+    
+}
+
+/* Estilos da seção */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+
+/* Estilos da primeira página */
+.logo {
+    display: block;
+    width: 30%;
+    margin: auto; 
+    text-align: center; /* Alinha o texto ao centro */
+}
+
+.video {
+  width: 100%; /* LARGURA */
+  height: 100%; /* ALTURA */
+  position: absolute; /* POSICIONAR O ITEM NUMA POSIÇÃO EXATA QUE EU DESEJAR */
+  top: 0;
+  left: 0;
+  z-index: -1; /* DEFINE QUEM FICA NA FRENTE DE QUEM */
+  object-fit: cover;/* FAZ COM QUE O VIDEO CUBRA TODA A TELA  */
+  filter: brightness(20%); /* BRILHO DO VIDEO*/
+}
+
+/* Estilos da segunda página */
+.layout {
+  display: flex;
+  align-items: left;
+  position: relative;
+  height: 100vh; /* TELA TODA - ALTURA */
+  width: 100vw; /* TELA TODA - LARGURA */
+  scroll-snap-align: start;
+}
+
+
+.fish {
+  position: absolute;
+  z-index: +1;
+  transform: translate(-33%, 0%) rotate(-68deg) scaleX(-1);
+}
+
+
+
+
+.logo_min {
+  width: 218px;
+  position: absolute; 
+  top: 82px;
+  left: 82px;
+}
+
+.descricao  {
+  height: 57vh; /* Altura máxima da caixa de resultados */
+  overflow-y: auto;
+  margin-top: 14rem;
+  margin-left: 3rem;
+  text-align:justify;
+  width: 45rem;
+  color: white;
+  position: relative;
+  left: 2rem;  
+}
+
+.descricao::-webkit-scrollbar {
+  width: 2%; /* Define a largura da barra de rolagem */
+}
+
+
+.item-resultado {
+  background: #000200; /* Cor de fundo dos itens */
+  border-radius: 0.6rem; /* Borda arredondada */
+  margin-bottom: 1rem; /* Espaçamento abaixo dos itens */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra leve */
+}
+.item-resultado h2 {
+  font-size: 1.6rem; /* Tamanho da fonte */
+    color: #ffffff; /* Cor do texto */
+}
+
+
+.Chosen {
+  box-shadow: 0 1px 2px #0003;
+  width: 100%;
+}
+
+.swiper {
+  margin-top: 12rem;
+  height: 78%; /*Altura*/
+  width: 56%; /*Largura*/
+}
+
+.swiper-slide {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Assista_agora{
+  width: 50%; /* Define uma largura para o elemento */
+  margin: 0 auto; /* Margem automática nas laterais para centralizar */
+  margin-top: 20rem;
+  text-align: center;
+
+}
+
+
+
+h1 {
+  color: #ffffff;
+ 
+}
+
+footer {
+  background-color: #000200;
+  color: #F5F7F8;
+  text-align: center;
+  padding: 0;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  font-size: 1rem;
+}
+
+@media (max-width: 450px) {
+  .swiper {
+    height: 270px;
+  }
+}
