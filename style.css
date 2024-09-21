@@ -157,3 +157,114 @@ footer {
     height: 270px;
   }
 }
+
+
+/*----------------------------------------Slider*----------------------------------------------*/
+
+.slider{
+    margin: auto; /*Antes tinha 0 auto*/
+    width: 800px;
+    height: 533px;
+    overflow: hidden;
+}
+
+/*----------------------------Slides--------------------------------*/
+.slides{
+  width: 400%;
+  height: 533px;
+  display: flex;
+}
+.slides input{
+  display: none;
+}
+/*Fim do slides*/
+
+/*----------------------------Slide-------------------------------*/
+.slide{
+  width: 25%;
+  position: relative;
+  transition: 2s;
+}
+.slide img{
+  width: 800px;
+}
+/*Fim do slides*/
+
+/*-----------------------Manual-navigatiom----------------------*/
+.manual-navigation{
+  position: absolute;
+  width: 800px;
+  margin-top: -30px;
+  display: flex;
+  justify-content: center;
+}
+/*---------------------------Manual-Btn---------------------------*/
+.manual-btn{
+  border:2px solid #fff;
+  padding: 4px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+.manual-btn:not(:last-child){
+  margin-right: 30px;
+}
+.manual-btn:hover{
+  background-color: #fff;
+}
+/*------------------------------Radio-------------------------------*/
+#radio1:checked ~ .first{
+  margin-left:0;
+}
+#radio2:checked ~ .first{
+  margin-left: -25%;
+}
+#radio3:checked ~ .first{
+  margin-left: -50%;
+}
+#radio4:checked ~ .first{
+  margin-left: -75%;
+}
+#radio5:checked ~ .first{
+  margin-left: -100%;
+}
+#radio6:checked ~ .first{
+  margin-left: -125%;
+}
+/*-------------------------Navigation-Auto---------------------------*/
+.navigation-auto{
+  position: absolute;
+  width: 800px;
+  margin-top: 503px; /*margin do video 360px*/
+  display: flex;
+  justify-content: center;
+}
+.navigation-auto div{
+  border: 2px solid #20a6ff;
+  padding: 4px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+.navigation-auto div:not(:last-child){
+  margin-right: 30px;
+}
+/*---------------------------Radio-checked----------------------------*/
+#radio1:checked ~ .navigation-auto .auto-btn1{
+  background-color: #fff;
+}
+#radio2:checked ~ .navigation-auto .auto-btn2{
+  background-color: #fff;
+}
+#radio3:checked ~ .navigation-auto .auto-btn3{
+  background-color: #fff;
+}
+#radio4:checked ~ .navigation-auto .auto-btn4{
+  background-color: #fff;
+}
+#radio5:checked ~ .navigation-auto .auto-btn5{
+  background-color: #fff;
+}
+#radio6:checked ~ .navigation-auto .auto-btn6{
+  background-color: #fff;
+}
