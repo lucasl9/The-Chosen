@@ -61,6 +61,14 @@ main {
   width: 100vw; /* TELA TODA - LARGURA */
   scroll-snap-align: start;
 }
+      .layout-mid{
+        display: flex;
+        align-items: left;
+        position: relative;
+        height: 100vh; /* TELA TODA - ALTURA */
+        width: 100vw; /* TELA TODA - LARGURA */
+        scroll-snap-align: start;
+      }
 
 
 .fish {
@@ -68,9 +76,21 @@ main {
   z-index: +1;
   transform: translate(-33%, 0%) rotate(-68deg) scaleX(-1);
 }
+/*-------------Terceira pagina-----------------*/
+.Assista{
+  margin-bottom: 40px ;
+}
 
+.logo-link{
+  display: inline-block;
+  margin:0 40px;
+}
 
-
+.links{
+  width: 222px;
+  padding: 12%;
+}
+/*----------------------Fim---------------------*/
 
 .logo_min {
   width: 218px;
@@ -267,4 +287,49 @@ footer {
 }
 #radio6:checked ~ .navigation-auto .auto-btn6{
   background-color: #fff;
+}
+
+
+/*---------------------------------MediaQuery------------------------------------*/
+@media screen and (max-width: 900px){
+    body {
+    width: 100vw;
+    height: 100vh;
+    }
+    .layout-mid{
+      display: inline;
+    }
+
+    .fish{
+      display: none;
+    }
+    .video{
+      display:block;
+    }
+    
+    .descricao{
+        text-align: center;
+        font-size: 14px;
+        height: 34vh;
+        margin-top: 26vh;
+        margin-left: 0;
+        width: 40vh;
+    }
+    .Assista_agora{
+      width: 85%;
+    }
+    .Assista{
+      font-size: 28px;
+      margin-bottom: 30px ;
+    }
+    .links{
+      width: 111px;
+      padding: 12%;
+    }
+
+    .logo-link{
+      display: inline-block;
+      margin:0 20px;
+    }
+
 }
